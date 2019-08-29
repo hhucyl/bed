@@ -237,6 +237,9 @@ void Setup (FLBM::Domain & dom, void * UD)
 		f[8] = f[10];
 		f[13] = f[11];
 		f[12] = f[14];
+
+        dom.Rho[0][i][j][index] = 0.0;
+        dom.Vel[0][i][j][index] = 0.0,0.0,0.0;
         for (size_t k=0;k<dom.Nneigh;k++)
         {
             dom.Rho[0][i][j][index] +=  dom.F[0][i][j][index][k];
