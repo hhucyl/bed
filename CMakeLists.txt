@@ -27,6 +27,7 @@ SET(PROGS
     GenSphere2
     perbed
     perbed_gpu
+    perbed_t
 )
 
 FOREACH(var ${PROGS})
